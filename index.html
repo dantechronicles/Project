@@ -4,190 +4,192 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
-    <link rel="stylesheet" href="styles.css">
-    <title> CSI Security Company</title>
+    <link rel="stylesheet" href="style.css">
+    <title>NEW WORLD</title>
 </head>
 <body>
     <header>
-        <h1>Welcome to Dantes Car Company</h1>
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Application</a></li>
-                <li><a href="#">History</a></li>
-            </ul>
+            <div class="nav-logo">
+                <h1>DANTE</h1>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Application</a></li>
+                    <li><a href="#">History</a></li>
+                </ul>
+            </div>
+            <div class="nav-actions">
+                <button>Login</button>
+                <button>Sign Up</button>
+            </div>
         </nav>
     </header>
-
-   <div id="introduction" >
-    <section id="melon">
-        <h2>Tired of your old car?<br>
-        worry not,you know why? because we got you.</h2>
+    <section id="Hero">
+        <div class="View">
+            <div class="left-content">
+                <h2>Welcome to Dante Car Company, where innovation meets excellence in automotive solutions.<br>Established with a vision to redefine the car ownership experience, Dante Car Company is committed to delivering top-tier vehicles that blend cutting-edge technology, superior performance, and unmatched reliability. Whether you're in search of a sleek sedan, a robust SUV, or an eco-friendly electric vehicle, Dante Car Company is your ultimate destination for quality, style, and value.</h2>               
+                <div class="search-container">
+                    <input id="search-engine" type="text" placeholder="Search...">
+                    <select id="car-select">
+                        <option value="" disabled selected>Select Car</option>
+                        <option value="sedan">Sedan</option>
+                        <option value="suv">SUV</option>
+                        <option value="truck">Truck</option>
+                    </select>
+                    <select id="location-select">
+                        <option value="" disabled selected>Select Location</option>
+                        <option value="new-york">New York</option>
+                        <option value="los-angeles">Los Angeles</option>
+                        <option value="chicago">Chicago</option>
+                    </select>
+                    <button id="search-btn">Search</button>
+                </div>
+                
+            </div>
+            <div class="right-content">
+                <img src="IMAGES/6012b123-61f5-4355-9192-8492948272b8.jpg" alt="World Car Image">
+            </div>
+        </div>
     </section>
-   
 
     <section id="img-melon">
-        <img src="./IMAGES/rolls_royce_phantom_top_10.webp" alt="security">
-    </section>
-   </div>
-   <section id="Reviews">
-        <h3> 100+ Reviews 1000+ Return clients</h3>
     </section>
 
-    <div id="about-section">
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Dante Car Company is a visionary automotive enterprise dedicated to reshaping the future of mobility. Founded on the principles of innovation, sustainability, and superior craftsmanship, we are committed to delivering vehicles that merge cutting-edge technology with unparalleled performance and style.<br>
-                We revolutionize the automotive industry by designing and producing vehicles that exceed expectations in quality, efficiency, and environmental responsibility. We aim to inspire confidence and excitement in every journey, creating a lasting impact for generations to come..<br>
-                We tend to become a global leader in the automotive industry by offering state-of-the-art vehicles that cater to diverse lifestyles and driving needs while promoting sustainability and innovation,<br>
-                  we are committed to providing top-notch vehicle import solutions tailored to meet your unique needs.</p>
-        </section>
-        <section id="photo">
-            <img src="./IMAGES/brixton-forged-porsche-911-pf9-rs-9.jpg" alt="security">
-        </section>
-    </div>
-    <div id="choice" >
-        <section id="choose us">
-            <h2>Why you should choose us</h2>
-            <ul>
-              <li> Electric Vehicles (EVs):<br>
-                At the forefront of clean energy, our EV lineup combines advanced battery technology with exceptional design to offer high performance and eco-friendly solutions.
-              </li>
-              <li>
-                Luxury Vehicles:<br>
-                Crafted with precision and attention to detail, our luxury models redefine comfort and sophistication.
-            </li>
-              <li>
-                SUVs and Crossovers:<br>
-                Designed for versatility and adventure, our SUVs provide durability, space, and cutting-edge features for every road.
-              </li>
-              <li>
-                Custom Design Services:<br>
-                Catering to individual preferences, we offer tailored designs that allow our customers to create their dream vehicles.
-              </li>
-              <li>
-                Commercial Vehicles:<br>
-                Reliable and innovative solutions for businesses of all sizes.
-              </li>
-              <li>
-                Concept Cars:<br>
-                Futuristic designs showcasing innovation and groundbreaking technology.<br>
-                Limited-edition models created to explore new trends and ideas in automotive design.
-              </li>
-              <li>
-                Adventure and Off-Road Vehicles:<br>
-                Tough, all-terrain vehicles built for outdoor enthusiasts<br>
-                Advanced suspension systems, enhanced ground clearance, and robust durability.
-                Designed for drivers seeking both eco-friendliness and range flexibility
-              </li>
-              <li>
-                Hybrid Models:<br>
-                Vehicles offering the perfect blend of electric and combustion engines.<br>
-              <li>
-                Sports Cars:<br>
-                High-speed performance vehicles engineered for thrill-seekers.<br>
-                Aerodynamic designs featuring lightweight materials for enhanced agility.
-            <li>
-                Commercial Vehicles:<br>
-                Reliable delivery vans with electric and hybrid configurations for eco-conscious logistics.
-            </li>
-            
-        </section> 
-    
-        <section id="image">
-            <img id="potrait" src="./IMAGES/6012b123-61f5-4355-9192-8492948272b8.jpg" alt="security">
-        </section>
-    </div>
+    <section id="Reviews">
+        <h3>100+ Reviews 1000+ Return Clients</h3>
+    </section>
+
+    <h2 style="text-align: start;">Our Team</h2>
+    <section id="wold" class="View">
+        <div class="team-members">
+            <img src="IMAGES/brixton-forged-porsche-911-pf9-rs-9.jpg" alt="Team Member 1">
+            <img src="IMAGES/photo-1648594756894-151b3eb89400.jpeg" alt="Team Member 2">
+            <img src="IMAGES/rolls_royce_phantom_top_10.webp" alt="Team Member 3">
+            <img src="IMAGES/best-luxury-cars-2024.webp" alt="Team Member 4">
+        </div>
+    </section>
+
+    <section id="choose-us">
+        <h2>Why You Should Choose Us</h2>
+        <div class="choose-us-content">
+            <img src="IMAGES/rolls_royce_phantom_top_10.webp"  class="choose-us-image" alt="Luxury Car">
+            <div class="choose-us-text">
+                <ul>
+                    <li>Exceptional Quality:<br>We pride ourselves on delivering vehicles that are meticulously crafted with premium materials and innovative technology to ensure durability and excellence.</li>
+                    <li>Wide Range of Models:<br>Whether you’re looking for luxury, performance, or affordability, we offer a diverse lineup of vehicles to suit every lifestyle and need.</li>
+                    <li>Customer-Centric Service:<br>At Dante Car Company, your satisfaction is our priority. From personalized consultations to reliable after-sales support, we’re here to make your car-buying journey seamless and enjoyable.</li>
+                    <li>Commitment to Sustainability:<br>We are dedicated to reducing our environmental footprint through eco-friendly practices and a growing range of electric and hybrid vehicles.</li>
+                    <li>Innovation You Can Trust:<br>With state-of-the-art technology and a focus on continuous improvement, our cars are designed to enhance your driving experience with safety, efficiency, and comfort.</li>
+                    <li>Affordable Financing Options:<br>We provide flexible financing plans and transparent pricing to make owning your dream car a reality.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
     <section id="services">
-        <h2>Our Services</h2>
-        <p>At Dante Car Company, we are committed to providing a seamless and exceptional experience for our customers, from the moment they discover our vehicles to every mile they drive. Our services are designed to meet diverse needs and ensure satisfaction at every stage of the journey.</p>
-    <div class="service">
-            <h3>Vehicle Sales</h3>
-            <ul>
-                <li>A wide range of vehicles, including electric cars, SUVs, luxury sedans, sports cars, and commercial vehicles</li>
-                <li>Personalized consultations to help customers select the perfect model for their needs and lifestyle..</li>
-                <li>Flexible financing options and trade-in programs.</li>
-            </ul>
-        </div>
-    
-        <div class="service">
-            <h3>Custom Vehicle Design</h3>
-            <ul>
-                <li>Tailored vehicle options, including color, interior materials, and feature customization..</li>
-                <li>Bespoke designs for luxury and high-performance models.</li>
-            </ul>
-        </div>
-    
-        <div class="service">
-            <h3>After-Sales Services</h3>
-            <ul>
-                <li>Warranty programs offering coverage for parts and labor.</li>
-                <li>Comprehensive vehicle maintenance packages to keep your car in peak condition.</li>
-                <li>Genuine spare parts and accessories to ensure quality and durability.</li>
-            </ul>
-        </div>
-    
-        <div class="service">
-            <h3>Electric Vehicle (EV) Solutions</h3>
-            <ul>
-                <li>Installation and support for home and workplace EV charging stations.</li>
-                <li>Guidance on accessing public charging networks.</li>
-                <li>Battery health diagnostics and replacement services.</li>
-            </ul>
-        </div>
-    
-        <div class="service">
-            <h3>Fleet Management</h3>
-            <ul>
-                <li>Customized solutions for businesses, including fleet sales, leasing, and maintenance.</li>
-                <li>Advanced telematics and fleet tracking systems for efficient operations.</li>
-                <li>Dedicated support for corporate clients.</li>
-            </ul>
+        <h2>What Our Members Are Saying About Us</h2>
+        <div class="image-review">
+            <div class="review-text">
+            </div>
+            <img src="IMAGES/White Elegant Minimalist Testimonial For Women's Business Instagram Post .jpg" alt="Customer Review" class="review-image">
         </div>
     </section>
-    
+
+    <div class="services-content">
+        <section>
+            <div class="service">
+                <h3>Our Services</h3>
+                <ul>
+                    <li>Car Sourcing:<br>We source vehicles from trusted suppliers worldwide, ensuring access to high-quality and well-maintained cars.</li>
+                    <li>Vehicle Importation:<br>We manage the entire importation process, including shipping, customs clearance, and documentation.</li>
+                    <li>Registration Assistance:<br>We help you navigate the local registration process, ensuring your car is road-ready.</li>
+                    <li>Financing Options:<br>Need assistance with financing your vehicle? We connect you with reliable partners for flexible payment plans.</li>
+                    <li>Vehicle Inspection Reports:<br>We provide detailed inspection reports for every imported car, ensuring you know the exact condition of your purchase.</li>
+                </ul>
+            </div>
+            
+            <div class="service">
+                <h3>Why Choose Us</h3>
+                <ul>
+                    <li>Wide Range of Vehicles:<br>Access to a diverse selection of car models and brands to suit your preferences and budget.</li>
+                    <li>Quality Assurance:<br>All vehicles undergo rigorous inspections to meet international and local quality standards.</li>
+                    <li>Transparent Pricing:<br>Competitive pricing with no hidden fees, ensuring you get the best value for your money.</li>
+                    <li>Expert Support:<br>Our experienced team offers personalized guidance at every stage of the car importation process.</li>
+                    <li>Timely Delivery:<br>Efficient handling of the process to ensure your vehicle is delivered on time.</li>
+                </ul>
+            </div>
+        
+            <div id="customer-support">
+                <h3>Customer Support</h3>
+                <ul id="customer-support-points">
+                    <li>Exceptional Quality:<br>We pride ourselves on delivering vehicles that are meticulously crafted with premium materials and innovative technology to ensure durability and excellence.</li>
+                    <li>Wide Range of Models:<br>Whether you’re looking for luxury, performance, or affordability, we offer a diverse lineup of vehicles to suit every lifestyle and need.</li>
+                    <li>Customer-Centric Service:<br>At Dante Car Company, your satisfaction is our priority. From personalized consultations to reliable after-sales support, we’re here to make your car-buying journey seamless and enjoyable.</li>
+                    <li>Commitment to Sustainability:<br>We are dedicated to reducing our environmental footprint through eco-friendly practices and a growing range of electric and hybrid vehicles.</li>
+                    <li>Innovation You Can Trust:<br>With state-of-the-art technology and a focus on continuous improvement, our cars are designed to enhance your driving experience with safety, efficiency, and comfort.</li>
+                </ul>
+                <div id="customer-support-image">
+                    <img src="IMAGES/photo-1648594756894-151b3eb89400.jpeg" alt="Customer Support">
+                </div>
+            </div>
+        </section>
+    </div>
+
     <section id="reviews">
-        <h2>Leave a review</h2>
-    <form id="review-form">
-        <label for="name">your name</label>
-        <input type="text" id="name" name="name"required>
+        <h2>Leave a Review</h2>
+        <form id="review-form">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
 
-        <label for="review">your review:</label>
-        <textarea id="review" name="review"required></textarea>
+            <label for="review">Your Review:</label>
+            <textarea id="review" name="review" required></textarea>
 
-        <label for="rating">Rating</label>
-        <select id="rating" name="rating"required>
-            <option value="5">5 stars &#9734</option>
-            <option value="4">4 stars &#9734</option>
-            <option value="3">3 stars &#9734</option>
-            <option value="2">2 stars &#9734</option>
-            <option value="1">1 star &#9734</option>
-        </select>
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="5">5 stars &#9734</option>
+                <option value="4">4 stars &#9734</option>
+                <option value="3">3 stars &#9734</option>
+                <option value="2">2 stars &#9734</option>
+                <option value="1">1 star &#9734</option>
+            </select>
 
-        <button type="submit">submit Review</button>
-    </form>
-                                                                                                                                
+            <button type="submit">Submit Review</button>
+        </form>
     </section>
 
     <section id="contact">
         <h2>Contact Information</h2>
-        <p>Email: dante@carimports.com</p>
+        <p>Email: dante@carimportcompany.com</p>
         <p>Phone: (123) 456-7890</p>
     </section>
-    <section id="logo"> 
 
-        <img id="potrait" src="./facebook-brands-solid.svg" alt="security">
-        <img id="potrait" src="./instagram-brands-solid.svg" alt="security">
-        <img id="potrait" src="./linkedin-brands-solid.svg" alt="security">
-        <img id="potrait" src="./x-twitter-brands-solid.svg" alt="security">
+    <footer id="main-footer">
+        <div id="footer-remarks">
+            <h3>Dante Company Remarks</h3>
+            <p>Providing innovative solutions and top-notch services to empower businesses globally.</p>
+            <div id="footer-icons">
+                <img src="IMAGES/transparent-x-icon-black-and-white-x-in-the-1710889063979.webp" alt="Icon 1">
+                <img src="IMAGES/images.jpeg" alt="Icon 2">
+                <img src="IMAGES/2021_Facebook_icon.svg.png" alt="Icon 3">
+            </div>
+        </div>
 
-    </section>
+        <div id="footer-links">
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Our Mission</a></li>
+                <li><a href="#">Our Team</a></li>
+            </ul>
+        </div>
 
-    <footer>
-        <p>&copy; 2025 Car Import Company. All rights reserved.</p>
+        <div id="footer-image">
+            <img src="IMAGES/nairobi_kenya_map_vector_gvl17b_ai_10_ai_pdf_2.jpg" alt="Company Logo">
+        </div>
     </footer>
-
 </body>
-</html>.
+</html>
