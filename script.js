@@ -1,49 +1,74 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const searchBtn = document.getElementById("search-btn");
-    const searchEngine = document.getElementById("search-engine");
-    const carSelect = document.getElementById("car-select");
-    const locationSelect = document.getElementById("location-select");
+document.addEventListener('DOMContentLoaded', function() {
 
-    searchBtn.addEventListener("click", () => {
-        const searchTerm = searchEngine.value.trim();
+
+    const searchButton = document.getElementById('search-btn');
+    const searchEngine = document.getElementById('search-engine');
+    const carSelect = document.getElementById('car-select');
+    const locationSelect = document.getElementById('location-select');
+    
+    searchButton.addEventListener('click', function() {
+        const query = searchEngine.value;
         const carType = carSelect.value;
         const location = locationSelect.value;
 
-        if (searchTerm || carType || location) {
-            alert(`Searching for: ${searchTerm} \nCar Type: ${carType} \nLocation: ${location}`);
-        } else {
-            alert("Please fill in at least one search field.");
+        if (!query || !carType || !location) {
+            alert("Please fill out all fields before searching.");
+            return;
         }
+        
+       
+        alert(`Searching for: ${query} | ${carType} | ${location}`);
     });
 
-    const reviewForm = document.getElementById("review-form");
-    const reviewName = document.getElementById("name");
-    const reviewText = document.getElementById("review");
-    const reviewRating = document.getElementById("rating");
-
-    reviewForm.addEventListener("submit", (event) => {
+   
+    const reviewForm = document.getElementById('review-form');
+    
+    reviewForm.addEventListener('submit', function(event) {
         event.preventDefault(); 
         
-        const name = reviewName.value.trim();
-        const review = reviewText.value.trim();
-        const rating = reviewRating.value;
+        const name = document.getElementById('name').value;
+        const review = document.getElementById('review').value;
+        const rating = document.getElementById('rating').value;
 
-        if (name && review && rating) {
-            alert(`Thank you for your review, ${name}! \nRating: ${rating} stars\nReview: ${review}`);
-            reviewForm.reset(); 
-        } else {
-            alert("Please fill in all fields before submitting.");
+        if (!name || !review || !rating) {
+            alert("Please fill out all fields before submitting your review.");
+            return;
         }
+
+        
+        alert(`Thank you for your review, ${name}! You rated us ${rating} stars.`);
+
+        
+        reviewForm.reset();
     });
 
-    const customerSupportText = document.getElementById("customer-support-text");
-    const customerSupportImage = document.getElementById("customer-support-image");
 
-    customerSupportText.addEventListener("click", () => {
-        if (customerSupportImage.style.display === "none") {
-            customerSupportImage.style.display = "flex";
-        } else {
-            customerSupportImage.style.display = "none";
-        }
+    const navToggle = document.createElement('button');
+    navToggle.classList.add('nav-toggle');
+    navToggle.innerHTML = '☰';
+    document.querySelector('nav').prepend(navToggle);
+
+    const navLinks = document.querySelector('.nav-links');
+
+    navToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+    });
+
+  
+    const navLinksItems = document.querySelectorAll('.nav-links a');
+    
+    navLinksItems.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const targetId = this.getAttribute('href').substring(1); 
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 100, 
+                    behavior: 'smooth'
+                });
+            }
+        });
     });
 });
