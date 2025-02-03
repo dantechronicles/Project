@@ -15,15 +15,14 @@ nav {
     left: 0;
     width: 100%;
     padding: 1rem;
+    margin-bottom: 20px;
     box-sizing: border-box;
     z-index: 1000;
-
 }
 
 .nav-logo {
     font-size: 1.2rem;
     font-weight: bold;
-
 }
 
 .nav-links ul {
@@ -92,17 +91,16 @@ nav {
         color: #fff;
         cursor: pointer;
     }
-}
 
+    .nav-toggle span {
+        font-size: 1.5rem;
+    }
+}
 
 .nav-toggle {
     display: none;
 }
 
-
-.nav-toggle span {
-    font-size: 1.5rem;
-}
 
 .left-content {
     display: flex;
@@ -127,9 +125,10 @@ nav {
     border: 1px solid beige;
     border-radius: 40px;
     padding-right: 10px;
+    margin-top: 20px;
 }
 
-/* Hero Section */
+
 #Hero {
     display: flex;
     flex-direction: column;
@@ -143,7 +142,6 @@ nav {
     padding: 0 10px;
 }
 
-/* Search Container */
 .search-container {
     display: flex;
     justify-content: center;
@@ -225,6 +223,14 @@ nav {
     }
 }
 
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #020202;
+    margin-bottom: 20px;
+}
+
 .team-members {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -262,7 +268,7 @@ nav {
 
 #choose-us {
     margin: 40px 0;
-    padding: 20px;
+    padding: 10px;
 }
 
 .choose-us-content {
@@ -274,9 +280,9 @@ nav {
 
 .choose-us-image {
     width: 100%;
-    max-width: 600px;
+    max-width: 800px;
     height: 600px;
-    border-radius: 20px;
+    border-radius: 50px;
 }
 
 
@@ -547,6 +553,7 @@ nav {
     grid-template-columns: 1fr 1fr 1fr;
     background-color: #69696d;
     color: #fff;
+    margin-top: 100px;
     padding: 20px;
     gap: 20px;
     align-items: start;
@@ -621,6 +628,68 @@ nav {
     padding-top: 10px;
     background: rgb(70, 69, 70);
     text-align: center;
+}
+
+#reviews {
+    padding: 20px;
+    text-align: center;
+    border-top: 5px solid #333;
+}
+
+#reviews h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.review-form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#review-form label {
+    font-size: 14px;
+    margin-bottom: 6px;
+    display: block;
+    text-align: left;
+    color: #555;
+}
+
+#review-form input,
+#review-form textarea,
+#review-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+#review-form input:focus,
+#review-form textarea:focus,
+#review-form select:focus {
+    border-color: #333;
+    outline: none;
+}
+
+#review-form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#review-form button:hover {
+    background-color: #555;
 }
 
 .img-melon {

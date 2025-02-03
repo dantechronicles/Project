@@ -42,15 +42,10 @@ document.addEventListener('DOMContentLoaded', function() {
         reviewForm.reset();
     });
 
-
-    const navToggle = document.createElement('button');
-    navToggle.classList.add('nav-toggle');
-    navToggle.innerHTML = '☰';
-    document.querySelector('nav').prepend(navToggle);
-
+    const navToggle = document.querySelector('.nav-toggle');
     const navLinks = document.querySelector('.nav-links');
-
-    navToggle.addEventListener('click', function() {
+    
+    navToggle.addEventListener('click', () => {
         navLinks.classList.toggle('active');
     });
 
