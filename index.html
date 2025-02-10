@@ -1,241 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>NEW WORLD</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
         <nav>
-            <div class="nav-logo">
-                <h1>Dante Car Imports</h1>
+            <div class="logo">Dante-Cars</div>
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
             </div>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Application</a></li>
-                    <li><a href="#">History</a></li>
-                </ul>
-            </div>
-            <div class="nav-actions">
-                <button>Login</button>
-                <button>Sign Up</button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Application</a></li>
+                <li><a href="#">History</a></li>
+            </ul>
+            <div class="auth-links" id="auth-links">
+                <a href="#">Log in</a>
+                <a href="#" class="signup-btn">Sign up</a>
             </div>
         </nav>
+    
+        <script>
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('nav-links');
+            const authLinks = document.getElementById('auth-links');
+    
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                authLinks.classList.toggle('active');
+            });
+        </script>
     </header>
     <section id="Hero">
-        <div class="View">
-            <div class="left-content">
-                <p>Welcome to Dante Car Company, where innovation meets excellence in automotive
-                    solutions.<br>Established with a vision to redefine the car ownership experience, Dante Car Company
-                    is committed to delivering top-tier vehicles that blend cutting-edge technology, superior
-                    performance, and unmatched reliability.<br> Whether you're in search of a sleek sedan, a robust SUV,
-                    or an eco-friendly electric vehicle, Dante Car Company is your ultimate destination for quality,
-                    style, and value.</p>
-                <div class="search-container">
-                    <input id="search-engine" type="text" placeholder="Search...">
-                    <select id="car-select">
-                        <option value="" disabled selected>Select Car</option>
-                        <option value="sedan">Sedan</option>
-                        <option value="suv">SUV</option>
-                        <option value="truck">Truck</option>
-                    </select>
-                    <select id="location-select">
-                        <option value="" disabled selected>Select Location</option>
-                        <option value="new-york">Nairobi</option>
-                        <option value="los-angeles">Mombasa</option>
-                        <option value="chicago">Kisumu</option>
-                    </select>
-                    <button id="search-btn">Search</button>
-                </div>
-            </div>
-            <div class="right-content">
-                <img src="./IMAGES/6012b123-61f5-4355-9192-8492948272b8.jpg" alt="right-content img">
-            </div>
+      <div class="View">
+        <div class="left-content">
+          <p>
+            Welcome to Dante Car Company, where innovation meets excellence in
+            automotive solutions.<br />Established with a vision to redefine the
+            car ownership experience, Dante Car Company is committed to
+            delivering top-tier vehicles that blend cutting-edge technology,
+            superior performance, and unmatched reliability.<br />
+            Whether you're in search of a sleek sedan, a robust SUV, or an
+            eco-friendly electric vehicle, Dante Car Company is your ultimate
+            destination for quality, style, and value.
+          </p>
+          <div class="search-container">
+            <input id="search-engine" type="text" placeholder="Search..." />
+            <select id="car-select">
+              <option value="" disabled selected>Select Car</option>
+              <option value="sedan">Sedan</option>
+              <option value="suv">SUV</option>
+              <option value="truck">Truck</option>
+            </select>
+            <select id="location-select">
+              <option value="" disabled selected>Select Location</option>
+              <option value="Nairobi">Nairobi</option>
+              <option value="Mombasa">Mombasa</option>
+              <option value="Kisumu">Kisumu</option>
+            </select>
+            <button id="search-btn">Search</button>
+          </div>
         </div>
+        <div class="right-content">
+          <img
+            src="./IMAGES/6012b123-61f5-4355-9192-8492948272b8.jpg"
+            alt="right-content img"
+          />
+        </div>
+      </div>
     </section>
-    <section id="img-melon">
-    </section>
+    <section id="img-melon"></section>
     <section id="Reviews">
-        <h3>100+ Reviews 1000+ Return Clients</h3>
+      <h3>100+ Reviews 1000+ Return Clients</h3>
     </section>
 
-    <h2 style="text-align: center;">Our Team</h2>
-    <section id="wold" class="View">
-        <div class="team-members">
-            <img src="./IMAGES/barbus.webp" alt="world">
-            <img src="./IMAGES/brixton-forged-porsche-911-pf9-rs-9.jpg" alt="world">
-            <img src="./IMAGES/photo-1648594756894-151b3eb89400.jpeg" alt="world">
-            <img src="./IMAGES/1.jpeg" alt="world">
-        </div>
+    <h1>Our Team</h1>
+    <section id="world" class="View">
+      <div class="team-members">
+        <img
+          src="IMAGES/brixton-forged-porsche-911-pf9-rs-9.jpg"
+          alt="Team Member 1"
+        />
+        <img
+          src="IMAGES/photo-1648594756894-151b3eb89400.jpeg"
+          alt="Team Member 2"
+        />
+        <img src="./IMAGES/bugatti.jpg" alt="Team Member 3" />
+        <img src="./IMAGES/rolls royce green .jpg" alt="Team Member 4" />
+      </div>
     </section>
     <section id="choose-us">
-        <h2>Why You Should Choose Us</h2>
-        <div class="choose-us-content">
-            <img src="./IMAGES/lamborghini-urus-by-mansory-and-mtm.jpg" class="choose-us-image" alt="Luxury Car">
-            <div class="choose-us-text">
-                <ul>
-                    <li>
-                        <h4>Exceptional Quality:</h4><br>We pride ourselves on delivering vehicles that are meticulously
-                        crafted with premium materials and innovative technology to ensure durability and excellence.
-                    </li>
-                    <li>
-                        <h4>Range of Models:</h4><br>Whether you’re looking for luxury, performance, or affordability,
-                        we offer a diverse lineup of vehicles to suit every lifestyle and need.
-                    </li>
-                    <li>
-                        <h4>Customer-Centric Service:</h4><br>At Dante Car Company, your satisfaction is our priority.
-                        From personalized consultations to reliable after-sales support, we’re here to make your
-                        car-buying journey seamless and enjoyable.
-                    </li>
-                    <li>
-                        <h4>Commitment to Sustainability:</h4><br>We are dedicated to reducing our environmental
-                        footprint through eco-friendly practices and a growing range of electric and hybrid vehicles.
-                    </li>
-                    <li>
-                        <h4>Innovation You Can Trust:</h4><br>With state-of-the-art technology and a focus on continuous
-                        improvement, our cars are designed to enhance your driving experience with safety, efficiency,
-                        and comfort.
-                    </li>
-                    <li>
-                        <h4>Affordable Financing Options:</h4><br>We provide flexible financing plans and transparent
-                        pricing to make owning your dream car a reality.
-                    </li>
-                </ul>
-            </div>
+      <h1>Why You Should Choose Us</h1>
+      <div class="choose-us-content">
+        <img src="./IMAGES/srt.jpg" class="choose-us-image" alt="Luxury Car" />
+        <div class="choose-us-text">
+          <ul>
+            <li>
+              <h4>Exceptional Quality:</h4>
+              <br />We pride ourselves on delivering vehicles that are
+              meticulously crafted with premium materials and innovative
+              technology to ensure durability and excellence.
+            </li>
+            <li>
+              <h4>Range of Models:</h4>
+              <br />Whether you’re looking for luxury, performance, or
+              affordability, we offer a diverse lineup of vehicles to suit every
+              lifestyle and need.
+            </li>
+            <li>
+              <h4>Customer-Centric Service:</h4>
+              <br />At Dante Car Company, your satisfaction is our priority.
+              From personalized consultations to reliable after-sales support,
+              we’re here to make your car-buying journey seamless and enjoyable.
+            </li>
+            <li>
+              <h4>Commitment to Sustainability:</h4>
+              <br />We are dedicated to reducing our environmental footprint
+              through eco-friendly practices and a growing range of electric and
+              hybrid vehicles.
+            </li>
+            <li>
+              <h4>Innovation You Can Trust:</h4>
+              <br />With state-of-the-art technology and a focus on continuous
+              improvement, our cars are designed to enhance your driving
+              experience with safety, efficiency, and comfort.
+            </li>
+            <li>
+              <h4>Affordable Financing Options:</h4>
+              <br />We provide flexible financing plans and transparent pricing
+              to make owning your dream car a reality.
+            </li>
+          </ul>
         </div>
+      </div>
     </section>
 
-    <section id="services">
-        <h2>What Our Members Are Saying About Us</h2>
-        <div class="image-review">
-            <div class="review-text">
+    <section class="reviews-section">
+      <div class="reviews-grid">
+        <div class="left-side">
+          <h2>What Our Members Are Saying About Us</h2>
+          <p class="description">
+            "Dante Car Imports exceeded my expectations! The process was
+            seamless, and they kept me updated every step of the way. Their
+            customer service is top-notch, and they ensured my car arrived on
+            time and in perfect condition. I appreciated their honesty and
+            commitment to quality. If you're looking for a stress-free car
+            importation experience, Dante Car Imports is the way to go!"
+          </p>
+          <div class="avatars-container">
+            <div class="avatar-icon" data-review="0">
+              <img src="./IMAGES/woman (1).png" alt="Jane Cooper" />
             </div>
-            <img src="./IMAGES/White Elegant Minimalist Testimonial For Women's Business Instagram Post  (1).png"
-                alt="customer-rieview">
-            <img src="./IMAGES/White Elegant Minimalist Testimonial For Women's Business Instagram Post .png"
-                alt="customer-review">
-            <img src="./IMAGES/2.png" alt="customer-review">
+            <div class="avatar-icon" data-review="1">
+              <img src="./IMAGES/man.png" alt="John Doe" />
+            </div>
+            <div class="avatar-icon" data-review="2">
+              <img src="./IMAGES/man (1).png" alt="Mary Jane" />
+            </div>
+            <div class="avatar-icon" data-review="3">
+              <img src="./IMAGES/woman.png" alt="Alice Smith" />
+            </div>
+          </div>
         </div>
+        <div class="right-side">
+          <div class="main-review">
+            <div class="avatar">
+              <img src="./IMAGES/woman (3).png" alt="Jane Cooper" />
+            </div>
+            <div class="review-content">
+              <p>
+                "I had an amazing experience with Dante Car Imports! From the
+                moment I inquired about a vehicle to the day it was delivered,
+                their team was professional, transparent, and extremely helpful.
+                The car was exactly as advertised, in excellent condition, and
+                at a competitive price. They handled all the importation
+                logistics smoothly, saving me time and hassle. I highly
+                recommend Dante Car Imports to anyone looking for a reliable and
+                trustworthy car dealer!"
+              </p>
+              <span class="review-author">Jane Cooper</span>
+              <span class="review-date">01/2/25</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <div class="services-content">
-        <section>
-            <div class="service">
-                <h3>Our Services</h3>
-                <ul>
-                    <li>
-                        <h4>Sourcing:</h4><br>We source vehicles from trusted suppliers worldwide, ensuring access to
-                        high-quality and well-maintained cars.
-                    </li>
-                    <li>
-                        <h4>Vehicle Importation:</h4><br>We manage the entire importation process, including shipping,
-                        customs clearance, and documentation.
-                    </li>
-                    <li>
-                        <h4>Registration Assistance:</h4><br>We help you navigate the local registration process,
-                        ensuring your car is road-ready.
-                    </li>
-                    <li>
-                        <h4>Financing Options:</h4><br>Need assistance with financing your vehicle? We connect you with
-                        reliable partners for flexible payment plans.
-                    </li>
-                    <li>
-                        <h4>Vehicle Inspection Reports:</h4><br>We provide detailed inspection reports for every
-                        imported car, ensuring you know the exact condition of your purchase.
-                    </li>
-                </ul>
-            </div>
 
-            <div id="customer-support">
-                <h2>Customer Support</h2>
-                <ul id="customer-support-points">
-                    <li>
-                        <h4>Exceptional Quality:</h4><br>We pride ourselves on delivering vehicles that are meticulously
-                        crafted with premium materials and innovative technology to ensure durability and excellence.
-                    </li>
-                    <li>
-                        <h4>Wide Range of Models:</h4><br>Whether you’re looking for luxury, performance, or
-                        affordability, we offer a diverse lineup of vehicles to suit every lifestyle and need.
-                    </li>
-                    <li>
-                        <h4>Customer-Centric Service:</h4><br>At Dante Car Company, your satisfaction is our priority.
-                        From personalized consultations to reliable after-sales support, we’re here to make your
-                        car-buying journey seamless and enjoyable.
-                    </li>
-                    <li>
-                        <h4>Commitment to Sustainability:</h4><br>We are dedicated to reducing our environmental
-                        footprint through eco-friendly practices and a growing range of electric and hybrid vehicles.
-                    </li>
-                    <li>
-                        <h4>Innovation You Can Trust:</h4><br>With state-of-the-art technology and a focus on continuous
-                        improvement, our cars are designed to enhance your driving experience with safety, efficiency,
-                        and comfort.
-                    </li>
-                </ul>
-                <div id="customer-support-image">
-                    <img src="./IMAGES/gt3.webp" alt="Customer Support">
-                </div>
+
+        <div id="customer-support">
+            <div id="customer-support-text">
+              <h2>Customer Support</h2>
+              <ul id="customer-support-points">
+                <li>
+                  <h4>Exceptional Quality:</h4>
+                  <br />We pride ourselves on delivering vehicles that are meticulously crafted with premium materials and innovative technology to ensure durability and excellence.
+                </li>
+                <li>
+                  <h4>Wide Range of Models:</h4>
+                  <br />Whether you’re looking for luxury, performance, or affordability, we offer a diverse lineup of vehicles to suit every lifestyle and need.
+                </li>
+                <li>
+                  <h4>Customer-Centric Service:</h4>
+                  <br />At Dante Car Company, your satisfaction is our priority. From personalized consultations to reliable after-sales support, we’re here to make your car-buying journey seamless and enjoyable.
+                </li>
+                <li>
+                  <h4>Commitment to Sustainability:</h4>
+                  <br />We are dedicated to reducing our environmental footprint through eco-friendly practices and a growing range of electric and hybrid vehicles.
+                </li>
+                <li>
+                  <h4>Innovation You Can Trust:</h4>
+                  <br />With state-of-the-art technology and a focus on continuous improvement, our cars are designed to enhance your driving experience with safety, efficiency, and comfort.
+                </li>
+              </ul>
             </div>
-        </section>
+            <div id="customer-support-image">
+              <img src="./IMAGES/lamborghini-urus-by-mansory-and-mtm.jpg" alt="Customer Support" />
+            </div>
+          </div>
+      </section>
     </div>
 
-    <section id="reviews">
-        <h2>Leave a Review</h2>
-        <div class="review-form-container">
-            <form id="review-form">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
-
-                <label for="review">Your Review:</label>
-                <textarea id="review" name="review" placeholder="Write your review here" required></textarea>
-
-                <label for="rating">Rating</label>
-                <select id="rating" name="rating" required>
-                    <option value="5">5 stars &#9734;</option>
-                    <option value="4">4 stars &#9734;</option>
-                    <option value="3">3 stars &#9734;</option>
-                    <option value="2">2 stars &#9734;</option>
-                    <option value="1">1 star &#9734;</option>
-                </select>
-
-                <button type="submit">Submit Review</button>
-            </form>
-        </div>
+    <section class="newsletter-section">
+      <div class="newsletter-container">
+        <h2>Subscribe To Our Newsletter</h2>
+        <p>
+          Stay updated with the latest news, health tips, and exclusive offers.
+          Subscribe now!
+        </p>
+        <form id="newsletter-form" class="newsletter-form">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <button type="submit">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </form>
+        <p class="success-message" id="success-message"></p>
+      </div>
     </section>
+
     <footer id="main-footer">
-        <div id="footer-remarks">
-            <h3>Dante Company Remarks</h3>
-            <p>Providing innovative solutions and top-notch services to empower businesses globally.</p>
-            <div id="footer-icons">
-                <img src="IMAGES/transparent-x-icon-black-and-white-x-in-the-1710889063979.webp" alt="Icon 1">
-                <img src="IMAGES/images.jpeg" alt="Icon 2">
-                <img src="IMAGES/2021_Facebook_icon.svg.png" alt="Icon 3">
-            </div>
+      <div id="footer-remarks">
+        <h3>Dante Company Remarks</h3>
+        <p>
+          Providing innovative solutions and top-notch services to empower
+          businesses globally.
+        </p>
+        <div id="footer-icons">
+          <img
+            src="IMAGES/transparent-x-icon-black-and-white-x-in-the-1710889063979.webp"
+            alt="Icon 1"
+          />
+          <img src="IMAGES/images.jpeg" alt="Icon 2" />
+          <img src="IMAGES/2021_Facebook_icon.svg.png" alt="Icon 3" />
         </div>
+      </div>
 
-        <div id="footer-links">
-            <h3>Useful Links</h3>
-            <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Our Mission</a></li>
-                <li><a href="#">Our Team</a></li>
-            </ul>
-        </div>
-
-        <div id="footer-image">
-            <img src="IMAGES/nairobi_kenya_map_vector_gvl17b_ai_10_ai_pdf_2.jpg" alt="Company Logo">
-        </div>
+      <div id="footer-links">
+        <h3>Useful Links</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Our Mission</a></li>
+          <li><a href="#">Our Team</a></li>
+        </ul>
+      </div>
+      <div id="footer-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509374!2d144.9537353153166!3d-37.816279742021665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d6a32f7f1f8!2sDante%20Car%20Imports!5e0!3m2!1sen!2sus!4v1633033226784!5m2!1sen!2sus"
+          width="300"
+          height="200"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
     </footer>
-</body>
-
-</body>
-
+  </body>
 </html>
